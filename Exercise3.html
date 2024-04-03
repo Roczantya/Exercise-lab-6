@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            color: black;
+            background-color: white;
+        }
+        nav,header,article,footer{
+            margin: 10px;
+        }
+        header{
+            text-align: center;
+            height: 200px;
+            width: 100%;
+            background-color: rgb(240, 240, 103);
+            font-size: xx-large;
+            line-height: 100px;
+            border: 1px solid black;
+        }
+        .artiicle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: calc(100%-100px);
+        }
+        .nav{
+            height: 100%;
+            width: 200px;
+            font-size: xx-large;
+            text-align: center;
+            background-color: palevioletred;
+            writing-mode: vertical-rl;
+            padding: 10px;
+            float: left; /* Added */
+        }
+
+        article{
+            flex: 1;
+            height: 200px;
+            width: 75%;
+            text-align: center;
+            margin-right: 10px;
+            background-color: lightskyblue;
+            float: right; /* Added */
+        }
+        figure{
+            text-align: center;
+            line-height: 20px;
+            background-color: lawngreen;
+            width: 100px;
+            height: 100px;
+        }
+        figcaption{
+            height: 27px;
+            width: 75px;
+            text-align: center;
+            align-items: center;
+            background-color: lightslategray;
+            margin-left: 10px;
+            margin-top:55px;
+        }
+        .ft{
+            background-color: black;
+            color: white;
+            height: 50px;
+            width: 60%;
+            text-align: center;
+            float: right;
+            padding: auto;
+            margin: 0 auto;
+        }
+       .hd{
+            background-color: palegreen;
+            line-height: 50px;
+            width: 60%;
+            height: 50px;
+            float: right;
+            text-align: center;
+            padding: auto;
+            margin: 0 auto; /* Added to center the text horizontally */
+       }
+        footer{
+            height: 100px;
+            width: 100%;
+            background-color: rgb(0, 255, 204);
+            clear: both;
+            text-align: center;
+            font-size: larger;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    
+    <div class="article">
+        <nav class="nav">Nav</nav> <!-- Moved nav to left side -->
+        
+        <article>article
+            <h3 class="hd">Header</h3>
+            <figure>
+                figure1
+                <figcaption>
+                    figcaption
+                </figcaption>
+            </figure>
+            <footer class="ft">Footer</footer> <!-- Fixed typo in footer class name -->
+        </article>
+
+        <article>article
+            <h3 class="hd">Header</h3>
+            <figure>
+                figure1
+                <figcaption>
+                    figcaption
+                </figcaption>
+            </figure>
+            <footer class="ft">Footer</footer> <!-- Fixed typo in footer class name -->
+        </article>
+
+        <article>article
+            <h3 class="hd">Header</h3>
+            <figure>
+                figure1
+                <figcaption>
+                    figcaption
+                </figcaption>
+            </figure>
+            <footer class="ft">Footer</footer> <!-- Fixed typo in footer class name -->
+        </article>
+        
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
